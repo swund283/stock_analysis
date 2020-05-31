@@ -40,12 +40,6 @@ Sub NewAllStocksAnalysis()
     'get the number of rows to loop over
     RowCount = Cells(Rows.Count, "A").End(xlUp).Row
         
-   
-   'setting the volume for ALL 12 tickers to zero for the totalVolumeArray initial values.  This needs to happen outside the loop
-   For v = 0 To 11
-        totalVolumeArray(tickerIndex) = 0
-   Next v
-
     
     'define the starting place in the array
     tickerIndex = 0
